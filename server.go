@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	https_url := "https://www.qubole.com"
-	http_url := "http://www.qubole.com"
+	https_url := "https://www.abc.com"
+	http_url := "http://www.abc.com"
 
 	domains := []string{http_url, https_url}
 	uniqueUrls := make(map[string]bool, 0)
