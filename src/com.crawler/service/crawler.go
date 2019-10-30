@@ -61,7 +61,7 @@ func (cl *Crawler) Crawl(url string, links chan string) {
 				links <- href
 				go cl.Crawl(href, links) // starting new go routines
 			} else if util.IsHttpUrl(href) { // ignoring non-http urls
-				fmt.Printf("\n[Non-Domain] %s", href)
+				// ignore
 			}
 		}
 	}
