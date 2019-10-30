@@ -35,7 +35,7 @@ func main() {
 		select {
 		case str := <-links:
 			if !uniqueUrls[str] {
-				fmt.Printf("\n[Domain] %s", str)
+				fmt.Printf("\n%s", str)
 			} else {
 				uniqueUrls[str] = true
 			}
